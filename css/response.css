@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/*メディアクエリ設定（※widthが767px以下の場合にCSSを適用する）*/
+@media screen and (max-width:768px){
+	
+	/*==========
+	ヘッダーエリアの設定
+	==========*/
+	
+	/*ヘッダーコンテンツの領域を100%に設定*/
+	#headerTop{
+		width:100%;
+	}
+	
+	/*rss・sitemapを右に設定*/
+	#subNav{
+		position:static;
+		float:right;
+		margin:0 0 20px 60px;
+	}
+	
+	/*ヘッダーのコンテンツ領域のフロート解除（rss・sitemapの領域確保）*/
+	#headerTop:after{
+		visibility:hidden;
+		height:0;
+		display:block;
+		font-size:0;
+		content:" ";
+		clear:both;
+	}
+	
+	/*ロゴの余白設定*/
+	#headerTop h1{
+		padding:10px;
+	}
+	
+	/*リード文の設定*/
+	#headerTop h2{
+		font-size:12px;
+		margin:0 0 20px 10px;
+	}
+	
+	/*==========
+	グローバルナビゲーションの設定
+	==========*/
+	
+	/*ナビゲーションの帯の非表示*/
+	#globalNav{
+		background:none;
+	}
+	
+	/*ナビゲーションの領域を100%に設定*/
+	#globalNav ul{
+		width:100%;
+	}
+	
+	/*ナビゲーションの背景画像とサイズの設定*/
+	#globalNav ul li,
+	#globalNav ul li:first-of-type{
+		background:url(../images/nv_bg.gif);
+		width:33.3%;
+	}
+	
+	/*ナビゲーションのリンクボタンの装飾の設定*/
+	#globalNav ul li a{
+		display:block;
+		background:url(../images/line.gif) no-repeat left center;
+		width:100%;
+		text-align:center;
+	}
+	
+	#globalNav ul li:first-of-type a,
+	#globalNav ul li:nth-of-type(4) a{
+		background:none;
+	}
+	
+	#globalNav ul li:first-of-type a:hover,
+	#globalNav ul li:nth-of-type(4) a:hover{
+		background:#fd946b;
+	}
+	
+	/*==========
+	画像サイズの設定
+	==========*/
+	
+	img{
+		max-width:100%;
+		height:auto;
+		width:auto; /*IE8のみに適用*/
+	}
+	
+	/*==========
+	コンテンツエリアの設定
+	==========*/
+	
+	/*コンテンツ領域の背景設定*/
+	#contents{
+		width:100%;
+	}
+	
+	/*メインコンテンツをフロートさせない*/
+	#contents_left{
+		width:100%;
+		float:none;
+	}
+	
+	/*サイドエリアをフロートさせない*/
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+	
+	/*WelcomeとRecommendMenuとInformationの余白設定*/
+	#welcome,
+	#recommend,
+	#info{
+		margin:15px 10px;
+	}
+	
+	/*おすすめメニューの枠を100%に設定*/
+	#recommend .box{
+		width:100%;
+	}
+	
+	/*アクセス領域の余白設定*/
+	#access{
+		width:90%;
+		margin:20px auto;
+	}
+	
+	/*アクセス情報項目の設定*/
+	#access ul{
+		padding-bottom:0;
+	}
+	
+	#access p{
+		padding-bottom:10px;
+	}
+	
+	/*バナーを中央に設定*/
+	#bnr{
+		text-align:center;
+	}
+	
+	/*==========
+	「ページ先頭へ戻る」ボタンの設定
+	==========*/
+	#gotoTop{
+		position:absolute;
+		right:0;
+		top:10px;
+	}
+	
+	/*==========
+	フッターエリアの設定
+	==========*/
+	#footer p small{
+		width:200px;
+		font-size:10px;
+	
+}
